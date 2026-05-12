@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+#[Fillable(['title', 'path', 'mime_type'])]
+class File extends Model
+{
+    /** @use HasFactory<\Database\Factories\FileFactory> */
+    use HasFactory;
+}
