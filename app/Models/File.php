@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 #[Fillable(['title', 'path', 'mime_type'])]
 class File extends Model
 {
-    /** @use HasFactory<\Database\Factories\FileFactory> */
     use HasFactory;
+    
 }
