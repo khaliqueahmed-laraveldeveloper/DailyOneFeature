@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@push('main')
+@section('main')
+    
+
 <div class="container">
     <h2>File Detailed View</h2>
 
@@ -28,5 +30,5 @@
     </div>
    
 </div>
-@endpush('main')
+@endsection
 

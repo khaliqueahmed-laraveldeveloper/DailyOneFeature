@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('main')
+@section('main')
 <div class="container">
     <h2>AWS S3 Files</h2>
     <div class="row justify-content-center">
@@ -61,5 +61,5 @@
 
     </div>
 </div>
-@endpush('main')
+@endsection
 

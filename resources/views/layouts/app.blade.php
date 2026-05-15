@@ -55,7 +55,7 @@
             </div>
     </nav>
 <div>
-    @stack('main')
+    @yield('main')
 </div>
 </body>
 </html>

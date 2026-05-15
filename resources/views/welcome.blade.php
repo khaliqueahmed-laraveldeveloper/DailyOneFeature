@@ -9,6 +9,9 @@
         <div class="col-md-12">
             <a href="{{ route('file.index') }}" class="btn btn-primary m-3">AWS S3 Files</a>
         </div>
+        <div class="col-md-12">
+            <a href="{{ route('captcha.index') }}" class="btn btn-primary m-3">CAPTCHA</a>
+        </div>
     </div>
 </div>
 @endpush('main')
