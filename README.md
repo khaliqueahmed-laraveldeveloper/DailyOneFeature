@@ -12,5 +12,7 @@ This is simple laravel appliaaion i am creating different type of things in this
 - php 8.5
 - league/flysystem-aws-s3-v3
 - aws/aws-sdk-php
+- mews/captcha
 ## Feature 
 Created a simple crud opraion for file storeage /view and delete on aws from applciation ui
+user can use simple captach for validation perpouse 
