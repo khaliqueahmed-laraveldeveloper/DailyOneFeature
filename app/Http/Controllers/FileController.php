@@ -28,9 +28,15 @@ class FileController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //
+    public function downloadfile(){
+        
+        $files= file::all();
+        if($files->isEmpty()) {
+         return view('files.download');
+          }
+          else{
+             return view('files.download', compact('files'));
+          }
     }
 
     /**

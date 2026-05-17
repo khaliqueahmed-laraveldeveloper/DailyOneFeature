@@ -4,7 +4,7 @@
 <div class="container">
     <h2>AWS S3 Files</h2>
     <div class="row justify-content-center">
-        <form action="{{ route('file.store') }}" method="POST" enctype="multipart/form-data">
+        {{-- <form action="{{ route('file.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row" style="border: 2px solid black">
                 <div class="col-sm-9">
@@ -16,8 +16,28 @@
             </div>
             </div>
             
-        </form>
+        </form> --}}
 
+        <div class="col-md-12">
+            <h2>How to Export Files</h2>
+        <ul>
+
+            <li>Today topic is how to export file </li>
+                <li>we are using maatwebsite/excel package for export file</li>
+                <li>first we need to create export class using command "php artisan make:export FileDataExport --model=File"</li>
+                <li>after creating export class we need to implement two methods collection and headings in that class</li>
+                <li>collection method is used to get data from database and return it as a collection</li>
+                <li>headings method is used to define the headings of the excel file</li>
+                <li>after implementing the export class we need to create a route for export file and call the export class in that route</li>
+                <li>finally we need to create a button in our view file to trigger the export functionality</li>
+        </ul>
+    </div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <a href="{{ route('file.export') }}" class="btn btn-success m-3">Export to Excel</a>
+        </div>
+</div>
         <div class="col-md-12">
             <p>Here you can manage your AWS S3 files.</p>
            <table class="table table-bordered table-striped">
