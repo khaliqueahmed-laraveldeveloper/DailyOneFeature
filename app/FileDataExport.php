@@ -15,7 +15,7 @@ class FileDataExport implements FromCollection, WithHeadings
     {
         //
     }
-  public function headings(): array  // Added a space before and after the colon
+  public function headings(): array  
 {
     return [
         'ID',
